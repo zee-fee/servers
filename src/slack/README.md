@@ -79,6 +79,8 @@ MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.
    - `reactions:write` - Add emoji reactions to messages
    - `users:read` - View users and their basic information
    - `users.profile:read` - View detailed profiles about users
+   - `groups:read` - View basic information about private channels that the bot has been added to
+   - `groups:history`- View messages and other content in private channels that the bot has been added to
 
 4. Install App to Workspace:
    - Click "Install to Workspace" and authorize the app

@@ -224,8 +224,8 @@ class SlackClient {
     const predefinedChannelIds = process.env.SLACK_CHANNEL_IDS;
     if (!predefinedChannelIds) {
       const params = new URLSearchParams({
-        types: "public_channel",
-        exclude_archived: "true",
+        types: 'private_channel,public_channel',
+        exclude_archived: 'true',
         limit: Math.min(limit, 200).toString(),
         team_id: process.env.SLACK_TEAM_ID!,
       });
